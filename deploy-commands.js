@@ -13,7 +13,7 @@ require("dotenv").config();
 const { REST, Routes, SlashCommandBuilder } = require("discord.js");
 const config = require("./config");
 
-const { DISCORD_TOKEN, CLIENT_ID } = process.env;
+const { MTUzNzY3NDM3MjQ0NDMyNzkzNg.GkfOcl.AWFyzn_kzKHNsAHzQdu7W18oJYVenUEnpZLgOU, 1537674372444327936 } = process.env;
 
 if (!DISCORD_TOKEN || !CLIENT_ID) {
   console.error("Missing DISCORD_TOKEN or CLIENT_ID in .env — see .env.example");
@@ -55,7 +55,7 @@ const rest = new REST({ version: "10" }).setToken(DISCORD_TOKEN);
   try {
     console.log(`Registering ${commands.length} command(s)...`);
 
-    if (config.GUILD_ID && config.GUILD_ID !== "PUT_YOUR_SERVER_ID_HERE") {
+    if (config.GUILD_ID && config.GUILD_ID !== "1536852592746037258") {
       // Guild-scoped: instant availability, recommended for single-server bots.
       await rest.put(Routes.applicationGuildCommands(CLIENT_ID, config.GUILD_ID), {
         body: commands,
